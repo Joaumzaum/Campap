@@ -1,0 +1,133 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.top-bar {
+    background-color: #000;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    height: 70px;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.logo-left-img {
+    max-height: 50px;
+    margin-left: 300px;
+    cursor: pointer;
+    display: block;
+    width: auto;
+}
+
+.logo-right-img {
+    max-height: 35px;
+    height: 100%;
+    margin-right: 300px;
+    max-width: auto;
+}
+
+.logo-new-right-img {
+    max-height: 55px;
+    margin-right: 292px;
+    height: 100%;
+    max-width: auto;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 257px;
+}
+
+nav ul li {
+    margin-right: 45px;
+    font-size: 1.2em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.background-section {
+    background-image: url('fundao.png');
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.texticulo{
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+table {
+    width: 50%;
+    height: 50%;
+    border-collapse: collapse;
+    align-self: center;
+    margin-left: 25%;
+    margin-top: 5%
+}
+
+table, th, td {
+    border: 3px solid #212121;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff6600;
+    color: #000;
+}
+
+td {
+    background-color: #333;
+    color: #fff;
+}
+
+.sortable th {
+    cursor: pointer;
+}
+
+.rodape {
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+}
+
+#texto-rodape {
+   text-align: center;
+    color: #ffffff;
+}

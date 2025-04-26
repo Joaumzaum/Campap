@@ -1,0 +1,269 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Topo */
+.top-bar {
+    background-color: #000;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    height: 70px;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.logo-left-img {
+    max-height: 50px;
+    margin-left: 300px;
+    cursor: pointer;
+    display: block;
+    width: auto;
+}
+
+.logo-right-img {
+    max-height: 35px;
+    height: 100%;
+    margin-right: 300px;
+    max-width: auto;
+}
+
+.logo-new-right-img {
+    max-height: 55px;
+    margin-right: 292px;
+    height: 100%;
+    max-width: auto;
+    cursor: pointer;
+}
+
+/* Menu de navegação */
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 257px;
+}
+
+nav ul li {
+    margin-right: 45px;
+    font-size: 1.2em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.background-section {
+    background-image: url('fundao.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Título principal do ranking */
+.ranking-title {
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    margin-top: 50px;
+}
+
+
+.texticulo {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    margin: 50px auto;
+    max-width: 80%;
+}
+
+/* Texto explicativo abaixo dos rankings */
+.ranking-description {
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+/* Rodapé */
+.rodape {
+    width: 100%;
+    background-color: #333;
+    position: relative;
+    border: rgb(163, 163, 163);
+    padding: 10px 0;
+}
+
+#texto-rodape {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Container do ranking */
+.ranking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Logo centralizada acima do ranking */
+.logo-ranking {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Rankings lado a lado */
+.ranking-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Estilização dos rankings */
+.ranking-section {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pro {
+    background-color: #00F0E0;
+}
+
+.am {
+    background-color: #FF0066;
+}
+
+.ranking-section h2 {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+/* Estilização da lista de nomes */
+.ranking-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.ranking-section ul li {
+    background: #fff;
+    margin: 2px 0;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+/* Logo menor dentro do ranking PRO */
+.pro .small-logo {
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+/* Dispositivos menores que 768px (celulares) */
+@media (max-width: 768px) {
+    /* Ajuste do header e do menu */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .logo-left-img,
+    .logo-right-img,
+    .logo-new-right-img {
+        margin: 0;
+        max-height: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Ajuste do ranking */
+    .ranking-title {
+        font-size: 1.5em;
+        margin-top: 15px;
+    }
+
+    .ranking-container {
+        padding: 10px;
+    }
+
+    .ranking-boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .ranking-section {
+        width: 90%;
+    }
+
+    /* Ajuste da seção de fundo */
+    .background-section {
+        flex-direction: column;
+        padding: 20px 10px;
+        min-height: auto;
+    }
+
+    /* Ajuste da descrição */
+    .ranking-description {
+        font-size: 1em;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Ajuste do rodapé */
+    .rodape {
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* Ajuste do .texticulo */
+    .texticulo {
+        margin: 20px auto;
+        max-width: 90%;
+    }
+}

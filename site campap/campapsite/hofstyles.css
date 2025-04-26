@@ -1,0 +1,200 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-image: url('fundao.png'); /* Nome do arquivo da imagem */
+    background-size: cover; /* Faz a imagem preencher toda a tela */
+    background-position: top; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    color: #ffffff;
+}
+
+.top-bar {
+    background-color: #000;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    height: 70px;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.logo-left-img {
+    max-height: 50px;
+    margin-left: 300px;
+    cursor: pointer;
+    display: block;
+    width: auto;
+}
+
+.logo-right-img {
+    max-height: 35px;
+    height: 100%;
+    margin-right: 300px;
+    max-width: auto;
+}
+
+.logo-new-right-img {
+    max-height: 55px;
+    margin-right: 292px;
+    height: 100%;
+    max-width: auto;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 257px;
+}
+
+nav ul li {
+    margin-right: 45px;
+    font-size: 1.2em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.texticulo{
+    color: #ffffff;
+    font-size: 1.4em;
+    padding-top: 50px;
+    text-align: center;
+    top: 150px;
+    width: 100%;
+    height: auto;
+}
+
+.lore{
+    color: #ffffff;
+    text-align: left;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 10%;
+    width: 650px;
+    font-size: 18px;
+}
+
+.loresupimpa{
+    color: #ffffff;
+    text-align: left;
+    position: relative;
+    margin-left: 10%;
+    width: 80%;
+    font-size: 18px;
+}
+
+.lore-alt{
+    color: #ffffff;
+    text-align: left;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 55%;
+    width: 650px;
+    font-size: 18px;
+}
+
+.carousel-container {
+    width: 40%;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: 10%;
+    overflow: hidden;
+}
+
+.carousel-container-alt {
+    width: 40%;
+    padding-top: 100px;
+    margin-left: 10%;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-buttons {
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 83.8%;
+}
+
+.carousel-buttons-alt {
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 9.8%;
+}
+
+.carousel-buttons button {
+    background-color: #333; /* Cor de fundo */
+    border-color: #ff6600; /* Cor da borda */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem sublinhado */
+    display: inline-block; /* Exibição em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margens */
+    cursor: pointer; /* Cursor de ponteiro */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.carousel-buttons-alt button {
+    background-color: #333; /* Cor de fundo */
+    border-color: #ff6600; /* Cor da borda */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem sublinhado */
+    display: inline-block; /* Exibição em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margens */
+    cursor: pointer; /* Cursor de ponteiro */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.carousel-buttons button:hover {
+    background-color: #ff6600; /* Cor de fundo quando o mouse está sobre o botão */
+}
+.rodape {
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    border:rgb(163, 163, 163)
+}
+
+#texto-rodape {
+   text-align: center;
+    color: #ffffff;
+}

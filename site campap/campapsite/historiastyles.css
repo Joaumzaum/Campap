@@ -1,0 +1,141 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-image: url('fundao.png'); /* Nome do arquivo da imagem */
+    background-size: cover; /* Faz a imagem preencher toda a tela */
+    background-position: top; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    color: #ffffff;
+}
+
+.top-bar {
+    background-color: #000;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    height: 70px;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.logo-left-img {
+    max-height: 50px;
+    margin-left: 300px;
+    cursor: pointer;
+    display: block;
+    width: auto;
+}
+
+.logo-right-img {
+    max-height: 35px;
+    height: 100%;
+    margin-right: 300px;
+    max-width: auto;
+}
+
+.logo-new-right-img {
+    max-height: 55px;
+    margin-right: 292px;
+    height: 100%;
+    max-width: auto;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 257px;
+}
+
+nav ul li {
+    margin-right: 45px;
+    font-size: 1.2em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.timeline {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-left: none; /* Remove a borda padrão */
+    position: relative;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    left: 20px; /* Posição da linha */
+    top: 0;
+    bottom: 0;
+    width: 3px; /* Espessura da linha */
+    background: linear-gradient(to bottom, #06E3CD, #E3068E); /* Degradê */
+}
+
+
+.event {
+    margin: 20px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.event:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: -7px;
+    top: 5px;
+}
+
+.event h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.event p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.rodape {
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+}
+
+#texto-rodape {
+   text-align: center;
+    color: #ffffff;
+}
