@@ -6,6 +6,7 @@ body, html {
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Top bar responsiva */
 .top-bar {
     background-color: #000;
     height: 50px;
@@ -13,9 +14,11 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Header responsivo */
 header {
     display: flex;
     justify-content: space-between;
@@ -27,6 +30,7 @@ header {
     margin-top: 0;
 }
 
+/* Logos responsivos */
 .logo-left-img {
     max-height: 50px;
     margin-left: 300px;
@@ -39,27 +43,29 @@ header {
     max-height: 35px;
     height: 100%;
     margin-right: 300px;
-    max-width: auto;
+    max-width: 100%;
 }
 
 .logo-new-right-img {
     max-height: 55px;
     margin-right: 292px;
     height: 100%;
-    max-width: auto;
+    max-width: 100%;
     cursor: pointer;
 }
 
+/* Menu de navegação responsivo */
 nav {
     display: flex;
     justify-content: flex-start;
-    
+    position: relative;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     margin-left: 257px;
+    padding: 0;
 }
 
 nav ul li {
@@ -72,6 +78,16 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Menu hamburguer para mobile */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    z-index: 100;
+}
+
+/* Área do hero responsiva */
 .hero {
     position: relative;
     height: 100vh;
@@ -88,6 +104,9 @@ nav ul li a {
     font-size: 3em;
     padding: 20px;
     text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    z-index: 2;
 }
 
 #rectangle {
@@ -99,6 +118,8 @@ nav ul li a {
     height: 400px;
     background-color: #00000070;
     padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
 }
 
 #background-video {
@@ -119,14 +140,18 @@ nav ul li a {
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgb(0, 0, 0) 100%);
 }
 
+/* Background section responsiva */
 .background-section {
     background-color: #000000;
     position: relative;
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 80px 0;
+    box-sizing: border-box;
 }
 
 .background-overlay {
@@ -135,10 +160,11 @@ nav ul li a {
     background-position: center;
     opacity: 0.3;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 0;
 }
 
 #background-fade {
@@ -148,35 +174,182 @@ nav ul li a {
     width: 100%;
     height: 50%;
     background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgb(0, 0, 0) 100%);
+    z-index: 1;
 }
 
-/* Texto sobre o fundo cinza */
+.background-content {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .background-text {
-    position: absolute;
     color: #fff;
     font-size: 4em;
     font-weight: bold;
     text-align: center;
-    z-index: 1;
-    transform: translate(0%, -240%);
+    margin-bottom: 120px;
+    width: 100%;
 }
 
-.texticulo{
-    position: absolute;
+.texticulo {
     color: #fff;
     text-align: left;
-    margin: 300px;
+    width: 80%;
+    max-width: 1000px;
     font-size: 20px;
 }
 
+/* Rodapé responsivo */
 .rodape {
     width: 100%;
     background-color: #333;
-    position: absolute;
-    border: 0;
+    padding: 20px 0;
 }
 
 #texto-rodape {
-   text-align: center;
+    text-align: center;
     color: #ffffff;
+    padding: 0 20px;
+}
+
+/* Media queries para diferentes tamanhos de tela */
+@media screen and (max-width: 1199px) {
+    /* Tablets e telas médias */
+    .logo-left-img {
+        margin-left: 50px;
+    }
+    
+    .logo-right-img {
+        margin-right: 50px;
+    }
+    
+    .logo-new-right-img {
+        margin-right: 50px;
+    }
+    
+    nav ul {
+        margin-left: 50px;
+    }
+    
+    nav ul li {
+        margin-right: 20px;
+    }
+    
+    #rectangle {
+        width: 90%;
+        max-width: 800px;
+    }
+    
+    .hero-text {
+        font-size: 2.5em;
+    }
+    
+    .background-text {
+        font-size: 3em;
+        margin-bottom: 80px;
+    }
+    
+    .texticulo {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Dispositivos móveis */
+    .logo-left-img {
+        margin-left: 15px;
+        max-height: 40px;
+    }
+    
+    .logo-right-img {
+        margin-right: 15px;
+        max-height: 30px;
+    }
+    
+    .logo-new-right-img {
+        margin-right: 15px;
+        max-height: 45px;
+    }
+    
+    /* Mostrar menu hamburguer */
+    .menu-toggle {
+        display: block;
+        margin-left: 15px;
+    }
+    
+    nav {
+        position: static;
+    }
+    
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        margin-left: 0;
+        padding: 10px 0;
+        z-index: 100;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 10px 15px;
+        font-size: 1em;
+    }
+    
+    #rectangle {
+        height: 300px;
+    }
+    
+    .hero-text {
+        font-size: 1.8em;
+    }
+    
+    .background-text {
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+    
+    .texticulo {
+        font-size: 16px;
+        width: 90%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Smartphones pequenos */
+    .hero-text {
+        font-size: 1.5em;
+    }
+    
+    #rectangle {
+        height: 250px;
+    }
+    
+    .background-text {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+    
+    .texticulo h2 {
+        font-size: 1.5em;
+    }
+    
+    .texticulo p {
+        font-size: 14px;
+    }
 }

@@ -18,6 +18,7 @@
 
     <header>
         <nav>
+            <div class="menu-toggle">☰</div>
             <ul>
                 <li><a href="#">Notícias</a></li>
                 <li><a href="#">Eventos</a></li>
@@ -25,7 +26,6 @@
                 <li><a href="hof.html">Hall of Fame</a></li>
                 <li><a href="estatisticas.html">Estatísticas</a></li>
                 <li><a href="ranking.html">Sanabria Ranking</a></li>
-                
             </ul>
         </nav>
         <div class="logo-new-right">
@@ -55,16 +55,18 @@
     <section class="background-section">
         <div class="background-overlay"></div>
         <div id="background-fade"></div>
-        <div class="background-text">
-            <p>Isso é Campap.</p>
-        </div>
-        <div class="texticulo">
-            <h2>Mas o que é o Campap?</h2>
-            <p>Existindo oficialmente desde 2021, o Campap foi de um evento despretensioso com 6 amigos para uma liga formada por mais de 30 corredores com um objetivo em comum: vencer. O nome “Campap” originou-se anos antes, como uma forma de se referir a uma série de campeonatos realizados nos jogos da franquia Forza, antes de começarmos a sediar eventos no simulador Assetto Corsa. O último Campap do “velho testamento” foi realizado no final de 2020.</p>
-            <p>O Campap se destaca além das corridas, formando pilotos promissores que antes não sabiam o conceito de tangência. É uma liga acessível para todos, onde o único requisito é ser gente boa. Pense no Campap como uma comunidade: Todos aqui temos o prazer de competir entre amigos, mas para termos disputas equilibradas em alto nível, é necessário treinar os que estão abaixo, e formar os novos pilotos.</p>      
-            <p>Para isso temos hoje duas modalidades: O próprio Campap, que já introduzimos, e o Campaquita - este sendo uma modalidade em que há uma liberdade maior, sendo mais permissivo e “amigável” com jogadores que estão iniciando no automobilismo virtual, sendo basicamente um campeonato introdutório, tanto para evoluir suas habilidades quanto para se entrosar com o resto do grupo.</p>
-            <p>Até hoje, foram 10 temporadas de corridas, com carros que vão desde categorias de turismo até Super Fórmulas. Com rankings separados para cada temporada, as rivalidades seguem sendo cultivadas tanto entre corredores da categoria PRO, quanto entre os que estão na categoria AM.
-                Em resumo, o Campap é uma forma diferente de abordar as corridas de simulador, criando-se um ambiente de leveza e pura resenha, onde o mais importante é não beijar o muro. Por aqui, o verdadeiro vencedor é aquele que sobrevive.</p>
+        <div class="background-content">
+            <div class="background-text">
+                <p>Isso é Campap.</p>
+            </div>
+            <div class="texticulo">
+                <h2>Mas o que é o Campap?</h2>
+                <p>Existindo oficialmente desde 2021, o Campap foi de um evento despretensioso com 6 amigos para uma liga formada por mais de 30 corredores com um objetivo em comum: vencer. O nome "Campap" originou-se anos antes, como uma forma de se referir a uma série de campeonatos realizados nos jogos da franquia Forza, antes de começarmos a sediar eventos no simulador Assetto Corsa. O último Campap do "velho testamento" foi realizado no final de 2020.</p>
+                <p>O Campap se destaca além das corridas, formando pilotos promissores que antes não sabiam o conceito de tangência. É uma liga acessível para todos, onde o único requisito é ser gente boa. Pense no Campap como uma comunidade: Todos aqui temos o prazer de competir entre amigos, mas para termos disputas equilibradas em alto nível, é necessário treinar os que estão abaixo, e formar os novos pilotos.</p>      
+                <p>Para isso temos hoje duas modalidades: O próprio Campap, que já introduzimos, e o Campaquita - este sendo uma modalidade em que há uma liberdade maior, sendo mais permissivo e "amigável" com jogadores que estão iniciando no automobilismo virtual, sendo basicamente um campeonato introdutório, tanto para evoluir suas habilidades quanto para se entrosar com o resto do grupo.</p>
+                <p>Até hoje, foram 10 temporadas de corridas, com carros que vão desde categorias de turismo até Super Fórmulas. Com rankings separados para cada temporada, as rivalidades seguem sendo cultivadas tanto entre corredores da categoria PRO, quanto entre os que estão na categoria AM.
+                    Em resumo, o Campap é uma forma diferente de abordar as corridas de simulador, criando-se um ambiente de leveza e pura resenha, onde o mais importante é não beijar o muro. Por aqui, o verdadeiro vencedor é aquele que sobrevive.</p>
+            </div>
         </div>
     </section>
 
@@ -75,6 +77,17 @@
             </div>
         </footer>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navUl = document.querySelector('nav ul');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    navUl.classList.toggle('show');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
-
