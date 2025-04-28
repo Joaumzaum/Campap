@@ -33,3 +33,15 @@ document.addEventListener("DOMContentLoaded", function () {
     initCarousel("carousel10");
     initCarousel("carousel11");
 });
+
+// responsividade betinha
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navUl = document.querySelector('nav ul');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    navUl.classList.toggle('show');
+                });
+            }
+        });

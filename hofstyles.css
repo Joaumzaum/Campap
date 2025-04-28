@@ -4,13 +4,14 @@ body, html {
     height: 100%;
     width: 100%;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-image: url('fundao.png'); /* Nome do arquivo da imagem */
-    background-size: cover; /* Faz a imagem preencher toda a tela */
-    background-position: top; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-image: url('fundao.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
     color: #ffffff;
 }
 
+/* Top bar responsiva */
 .top-bar {
     background-color: #000;
     height: 50px;
@@ -18,9 +19,11 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Header responsivo */
 header {
     display: flex;
     justify-content: space-between;
@@ -32,6 +35,7 @@ header {
     margin-top: 0;
 }
 
+/* Logos responsivos */
 .logo-left-img {
     max-height: 50px;
     margin-left: 300px;
@@ -44,27 +48,29 @@ header {
     max-height: 35px;
     height: 100%;
     margin-right: 300px;
-    max-width: auto;
+    max-width: 100%;
 }
 
 .logo-new-right-img {
     max-height: 55px;
     margin-right: 292px;
     height: 100%;
-    max-width: auto;
+    max-width: 100%;
     cursor: pointer;
 }
 
+/* Menu de navegação responsivo */
 nav {
     display: flex;
     justify-content: flex-start;
-    
+    position: relative;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     margin-left: 257px;
+    padding: 0;
 }
 
 nav ul li {
@@ -77,59 +83,65 @@ nav ul li a {
     text-decoration: none;
 }
 
-.texticulo{
+/* Menu hamburguer para mobile */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    z-index: 100;
+}
+
+/* Textos e Carrossel */
+.texticulo {
     color: #ffffff;
     font-size: 1.4em;
     padding-top: 50px;
     text-align: center;
-    top: 150px;
     width: 100%;
     height: auto;
 }
 
-.lore{
+.lore, .lore-alt, .loresupimpa {
     color: #ffffff;
     text-align: left;
+    font-size: 18px;
+}
+
+.lore {
     position: absolute;
     margin-top: 110px;
     margin-left: 10%;
     width: 650px;
-    font-size: 18px;
 }
 
-.loresupimpa{
-    color: #ffffff;
-    text-align: left;
-    position: relative;
-    margin-left: 10%;
-    width: 80%;
-    font-size: 18px;
-}
-
-.lore-alt{
-    color: #ffffff;
-    text-align: left;
+.lore-alt {
     position: absolute;
     margin-top: 110px;
     margin-left: 55%;
     width: 650px;
-    font-size: 18px;
+}
+
+.loresupimpa {
+    position: relative;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.carousel-container, .carousel-container-alt {
+    width: 40%;
+    padding-top: 100px;
+    overflow: hidden;
 }
 
 .carousel-container {
-    width: 40%;
-    padding-top: 100px;
     margin-left: auto;
     margin-right: 10%;
-    overflow: hidden;
 }
 
 .carousel-container-alt {
-    width: 40%;
-    padding-top: 100px;
     margin-left: 10%;
     margin-right: auto;
-    overflow: hidden;
 }
 
 .carousel {
@@ -142,59 +154,165 @@ nav ul li a {
     height: auto;
 }
 
-.carousel-buttons {
+.carousel-buttons, .carousel-buttons-alt {
     justify-content: space-between;
     margin-top: 10px;
+}
+
+.carousel-buttons {
     margin-left: 83.8%;
 }
 
 .carousel-buttons-alt {
-    justify-content: space-between;
-    margin-top: 10px;
     margin-left: 9.8%;
 }
 
-.carousel-buttons button {
-    background-color: #333; /* Cor de fundo */
-    border-color: #ff6600; /* Cor da borda */
-    color: white; /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno */
-    text-align: center; /* Alinhamento do texto */
-    text-decoration: none; /* Sem sublinhado */
-    display: inline-block; /* Exibição em linha */
-    font-size: 16px; /* Tamanho da fonte */
-    margin: 4px 2px; /* Margens */
-    cursor: pointer; /* Cursor de ponteiro */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s ease; /* Transição suave */
+.carousel-buttons button, .carousel-buttons-alt button {
+    background-color: #333;
+    border-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.carousel-buttons-alt button {
-    background-color: #333; /* Cor de fundo */
-    border-color: #ff6600; /* Cor da borda */
-    color: white; /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno */
-    text-align: center; /* Alinhamento do texto */
-    text-decoration: none; /* Sem sublinhado */
-    display: inline-block; /* Exibição em linha */
-    font-size: 16px; /* Tamanho da fonte */
-    margin: 4px 2px; /* Margens */
-    cursor: pointer; /* Cursor de ponteiro */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s ease; /* Transição suave */
+.carousel-buttons button:hover, .carousel-buttons-alt button:hover {
+    background-color: #ff6600;
 }
 
-.carousel-buttons button:hover {
-    background-color: #ff6600; /* Cor de fundo quando o mouse está sobre o botão */
-}
+/* Rodapé responsivo */
 .rodape {
     width: 100%;
     background-color: #333;
     position: absolute;
-    border:rgb(163, 163, 163)
 }
 
 #texto-rodape {
-   text-align: center;
+    text-align: center;
     color: #ffffff;
+}
+
+/* Media queries para diferentes tamanhos de tela */
+@media screen and (max-width: 1199px) {
+    .logo-left-img {
+        margin-left: 50px;
+    }
+
+    .logo-right-img, .logo-new-right-img {
+        margin-right: 50px;
+    }
+
+    nav ul {
+        margin-left: 50px;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    .lore, .lore-alt {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .carousel-container, .carousel-container-alt {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    .carousel-buttons, .carousel-buttons-alt {
+        margin-left: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo-left-img {
+        margin-left: 15px;
+        max-height: 40px;
+    }
+
+    .logo-right-img {
+        margin-right: 15px;
+        max-height: 30px;
+    }
+
+    .logo-new-right-img {
+        margin-right: 15px;
+        max-height: 45px;
+    }
+
+    /* Mostrar menu hamburguer */
+    .menu-toggle {
+        display: block;
+        margin-left: 15px;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        margin-left: 0;
+        padding: 10px 0;
+        z-index: 100;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 15px;
+        font-size: 1em;
+    }
+
+    .texticulo {
+        font-size: 1.2em;
+        padding: 20px 10px;
+    }
+
+    .lore, .lore-alt, .loresupimpa {
+        position: relative;
+        margin: 20px auto;
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .carousel-container, .carousel-container-alt {
+        width: 90%;
+        padding-top: 30px;
+    }
+
+    .carousel-buttons, .carousel-buttons-alt {
+        margin-left: 38%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .texticulo {
+        font-size: 1em;
+        padding: 10px 5px;
+    }
+
+    .lore, .lore-alt, .loresupimpa {
+        font-size: 14px;
+    }
+
+    .carousel-buttons, .carousel-buttons-alt {
+        margin-left: 35%;
+    }
 }
