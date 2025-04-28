@@ -18,6 +18,7 @@
 
     <header>
         <nav>
+            <div class="menu-toggle">☰</div>
             <ul>
                 <li><a href="#">Notícias</a></li>
                 <li><a href="#">Eventos</a></li>
@@ -57,6 +58,18 @@
         </div>
     </footer>
 </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navUl = document.querySelector('nav ul');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    navUl.classList.toggle('show');
+                });
+            }
+        });
+    </script>
 
 </body>
 </html>
