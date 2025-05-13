@@ -1,3 +1,6 @@
+/* ======================
+   SEU CSS ORIGINAL
+   ====================== */
 body, html {
     margin: 0;
     padding: 0;
@@ -8,11 +11,10 @@ body, html {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Mantém o fundo fixo durante a rolagem */
+    background-attachment: fixed;
     color: #ffffff;
 }
 
-/* Top bar responsiva */
 .top-bar {
     background-color: #000;
     height: 50px;
@@ -24,7 +26,6 @@ body, html {
     box-sizing: border-box;
 }
 
-/* Header responsivo */
 header {
     display: flex;
     justify-content: space-between;
@@ -36,7 +37,6 @@ header {
     margin-top: 0;
 }
 
-/* Logos responsivos */
 .logo-left-img {
     max-height: 50px;
     margin-left: 300px;
@@ -60,7 +60,6 @@ header {
     cursor: pointer;
 }
 
-/* Menu de navegação responsivo */
 nav {
     display: flex;
     justify-content: flex-start;
@@ -84,7 +83,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Menu hamburguer para mobile */
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -99,210 +97,112 @@ h1 {
     font-size: 2.5em;
     margin-top: 40px;
 }
-
-/* Timeline responsiva */
-.timeline {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 10px 10px 10px 40px;
-    position: relative;
-}
-
-.timeline:before {
-    content: "";
-    position: absolute;
-    left: 20px;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: linear-gradient(to bottom, #06E3CD, #E3068E);
-}
-
-.event {
-    margin: 30px 0;
-    padding-left: 20px;
-    position: relative;
-}
-
-.event:before {
-    content: "";
-    width: 14px;
-    height: 14px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    position: absolute;
-    left: -7px;
-    top: 5px;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
-}
-
-.event h3 {
-    margin: 0 0 10px;
-    font-size: 1.5em;
-    color: #ffffff;
-}
-
-.event p {
-    margin: 0 0 15px;
-    color: #ffffff;
-    line-height: 1.6;
-    font-size: 1em;
-}
-
-/* Rodapé responsivo */
 .rodape {
     width: 100%;
     background-color: #333;
     position: absolute;
 }
-
 #texto-rodape {
     text-align: center;
     color: #ffffff;
 }
 
-/* Media queries para diferentes tamanhos de tela */
-@media screen and (max-width: 1199px) {
-    /* Tablets e telas médias */
-    .logo-left-img {
-        margin-left: 50px;
-    }
-    
-    .logo-right-img {
-        margin-right: 50px;
-    }
-    
-    .logo-new-right-img {
-        margin-right: 50px;
-    }
-    
-    nav ul {
-        margin-left: 50px;
-    }
-    
-    nav ul li {
-        margin-right: 20px;
-        font-size: 1.1em;
-    }
-    
-    .timeline {
-        width: 85%;
-    }
-    
-    h1 {
-        font-size: 2.2em;
-    }
+@media screen and (max-width: 1199px) { /* ... */ }
+@media screen and (max-width: 768px) { /* ... */ }
+@media screen and (max-width: 480px) { /* ... */ }
+
+
+/* ======================
+   ESTILOS DOS CARDS DE ETAPAS
+   ====================== */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-    /* Dispositivos móveis */
-    .logo-left-img {
-        margin-left: 15px;
-        max-height: 40px;
-    }
-    
-    .logo-right-img {
-        margin-right: 15px;
-        max-height: 30px;
-    }
-    
-    .logo-new-right-img {
-        margin-right: 15px;
-        max-height: 45px;
-    }
-    
-    /* Mostrar menu hamburguer */
-    .menu-toggle {
-        display: block;
-        margin-left: 15px;
-    }
-    
-    nav {
-        position: static;
-    }
-    
-    nav ul {
-        display: none;
-        position: absolute;
-        top: 120px;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        flex-direction: column;
-        margin-left: 0;
-        padding: 10px 0;
-        z-index: 100;
-    }
-    
-    nav ul.show {
-        display: flex;
-    }
-    
-    nav ul li {
-        margin: 10px 15px;
-        font-size: 1em;
-    }
-    
-    h1 {
-        font-size: 1.8em;
-        padding: 15px;
-    }
-    
-    .timeline {
-        width: 90%;
-        padding-left: 35px;
-    }
-    
-    .timeline:before {
-        left: 15px;
-    }
-    
-    .event {
-        margin: 25px 0;
-    }
-    
-    .event h3 {
-        font-size: 1.3em;
-    }
-    
-    .event p {
-        font-size: 0.95em;
-    }
+.stage-card {
+  background: rgba(0,0,0,0.6);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
-@media screen and (max-width: 480px) {
-    /* Smartphones pequenos */
-    h1 {
-        font-size: 1.5em;
-        padding: 10px;
-    }
-    
-    .timeline {
-        width: 95%;
-        padding-left: 30px;
-    }
-    
-    .timeline:before {
-        left: 12px;
-    }
-    
-    .event:before {
-        width: 10px;
-        height: 10px;
-        left: -5px;
-    }
-    
-    .event h3 {
-        font-size: 1.2em;
-    }
-    
-    .event p {
-        font-size: 0.9em;
-    }
-    
-    /* Ajuste para background em telas pequenas */
-    body, html {
-        background-position: center top;
-    }
+.stage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #444;
+}
+
+.stage-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #ff6600;
+}
+
+.date-badge {
+  background: #ff4500;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.stage-body {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.stage-image {
+  width: 400px;
+  height: 320px;
+  object-fit: cover;
+  background: #333;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.stage-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stage-content p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.stage-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.info-item {
+  background: #2a2a2a;
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+
+.info-item strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #ff6600;
+}
+
+@media (max-width: 768px) {
+  .stage-body {
+    flex-direction: column;
+  }
+  .stage-image {
+    width: 100%;
+    height: auto;
+  }
 }
