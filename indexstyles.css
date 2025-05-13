@@ -188,13 +188,16 @@ nav ul li a {
     align-items: center;
 }
 
+/* Texto sobre o fundo cinza */
 .background-text {
-    color: #fff;
-    font-size: 4em;
+    background-image: url('campaprc.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff00;
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 120px;
-    width: 100%;
+    transform: translate(0%, -65%);
 }
 
 .texticulo {
@@ -209,13 +212,12 @@ nav ul li a {
 .rodape {
     width: 100%;
     background-color: #333;
-    padding: 20px 0;
+    position: absolute;
 }
 
 #texto-rodape {
     text-align: center;
     color: #ffffff;
-    padding: 0 20px;
 }
 
 /* Media queries para diferentes tamanhos de tela */

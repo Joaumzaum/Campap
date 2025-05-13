@@ -4,6 +4,12 @@ body, html {
     height: 100%;
     width: 100%;
     font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-image: url('fundao.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantém o fundo fixo durante a rolagem */
+    color: #ffffff;
 }
 
 /* Topo */
@@ -73,15 +79,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-.background-section {
-    background-image: url('fundao.png');
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /* Título principal do ranking */
 .ranking-title {
@@ -114,9 +111,7 @@ nav ul li a {
 .rodape {
     width: 100%;
     background-color: #333;
-    position: relative;
-    border: rgb(163, 163, 163);
-    padding: 10px 0;
+    position: absolute;
 }
 
 #texto-rodape {
