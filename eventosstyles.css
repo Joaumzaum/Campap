@@ -67,19 +67,55 @@ nav {
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    margin-left: 257px;
+  display: flex;
+  list-style: none;
+  margin-left: 257px;
+  position: relative; /* Adicionado */
 }
 
 nav ul li {
-    margin-right: 45px;
-    font-size: 1.2em;
+  margin-right: 45px;
+  font-size: 1.2em;
+  position: relative; /* Adicionado para o submenu ser posicionado relativamente a este item */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Submenu oculto inicialmente */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 180px;
+  z-index: 9999;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.submenu li a {
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+
+.submenu li a:hover {
+  background-color: #333;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .submenu {
+  display: flex;
 }
 
 .menu-toggle {
@@ -141,11 +177,11 @@ h1 {
 .stage-header h2 {
   margin: 0;
   font-size: 1.3rem;
-  color: #ff6600;
+  color: #00F0E0;
 }
 
 .date-badge {
-  background: #ff4500;
+  background: #FF0066;
   padding: 0.3rem 0.8rem;
   border-radius: 4px;
   font-size: 0.9rem;
@@ -193,7 +229,7 @@ h1 {
 .info-item strong {
   display: block;
   margin-bottom: 0.25rem;
-  color: #ff6600;
+  color: #00F0E0;
 }
 
 @media (max-width: 768px) {

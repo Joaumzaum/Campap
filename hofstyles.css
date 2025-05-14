@@ -169,7 +169,7 @@ nav ul li a {
 
 .carousel-buttons button, .carousel-buttons-alt button {
     background-color: #333;
-    border-color: #ff6600;
+    border-color: #00F0E0;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -183,7 +183,7 @@ nav ul li a {
 }
 
 .carousel-buttons button:hover, .carousel-buttons-alt button:hover {
-    background-color: #ff6600;
+    background-color: #FF0066;
 }
 
 /* Rodapé responsivo */
