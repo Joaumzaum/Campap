@@ -205,3 +205,77 @@ h1 {
     height: auto;
   }
 }
+
+/* Media queries para diferentes tamanhos de tela */
+@media screen and (max-width: 1199px) {
+    /* Tablets e telas médias */
+    .logo-left-img {
+        margin-left: 50px;
+    }
+    
+    .logo-right-img {
+        margin-right: 50px;
+    }
+    
+    .logo-new-right-img {
+        margin-right: 50px;
+    }
+    
+    nav ul {
+        margin-left: 50px;
+    }
+    
+    nav ul li {
+        margin-right: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Dispositivos móveis */
+    .logo-left-img {
+        margin-left: 15px;
+        max-height: 40px;
+    }
+    
+    .logo-right-img {
+        margin-right: 15px;
+        max-height: 30px;
+    }
+    
+    .logo-new-right-img {
+        margin-right: 15px;
+        max-height: 45px;
+    }
+    
+    /* Mostrar menu hamburguer */
+    .menu-toggle {
+        display: block;
+        margin-left: 15px;
+    }
+    
+    nav {
+        position: static;
+    }
+    
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        margin-left: 0;
+        padding: 10px 0;
+        z-index: 100;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 10px 15px;
+        font-size: 1em;
+    }
+  }
