@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campap: Racing Seasons</title>
+    <link rel="stylesheet" href="noticiastyles.css">
+</head>
+
+    <div class="top-bar">
+        <div class="logo-left">
+            <a href="/index.html"><img src="/logo-left.png" alt="Campap" class="logo-left-img"></a> <!-- Link para a página principal -->
+        </div>
+        <div class="logo-right">
+            <img src="/logo-right.png" alt="Nerdola" class="logo-right-img"> <!-- Sem link, apenas imagem -->
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="menu-toggle">☰</div>
+            <ul>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="/eventos.html">Eventos</a></li>
+                <li><a href="/historia.html">História</a></li>
+                <li><a href="/hof.html">Hall of Fame</a></li>
+                <li><a href="/estatisticas.html">Estatísticas</a></li>
+                <li><a href="/ranking.html">Sanabria Ranking</a></li>
+            </ul>
+        </nav>
+        <div class="logo-new-right">
+            <a href="/campaquita.html"><img src="/logo-new-right.png" alt="Campaquita" class="logo-new-right-img"></a>
+        </div>
+    </header>
+    
+<body>
+    
+ <main class="noticias-container">
+    <h1 class="noticias-titulo">Últimas Notícias</h1>
+
+    <div class="botoes-visualizacao">
+        <button id="modo-lista">📝 Lista</button>
+        <button id="modo-grade">🔲 Grade</button>
+    </div>
+
+    <div id="noticias-wrapper" class="modo-lista">
+        <section class="noticia-card">
+            <img src="imagens/gp1.jpg" alt="Imagem do GP" class="noticia-img">
+            <div class="noticia-conteudo">
+                <h2 class="noticia-titulo">GP de Interlagos termina com final surpreendente</h2>
+                <p class="noticia-descricao">A corrida em Interlagos trouxe emoções do início ao fim, com ultrapassagens decisivas e uma estratégia ousada que levou o piloto campaqueiro à vitória.</p>
+                <a href="noticia1.html" class="leia-mais">Leia mais</a>
+            </div>
+        </section>
+
+        <section class="noticia-card">
+            <img src="imagens/gp2.jpg" alt="Imagem do Evento" class="noticia-img">
+            <div class="noticia-conteudo">
+                <h2 class="noticia-titulo">Evento especial reúne lendas do Campap</h2>
+                <p class="noticia-descricao">O evento comemorativo relembrou momentos marcantes e premiou os destaques de cada era do Campap Racing Seasons.</p>
+                <a href="noticia2.html" class="leia-mais">Leia mais</a>
+            </div>
+        </section>
+    </div>
+</main>
+
+<script>
+    const wrapper = document.getElementById('noticias-wrapper');
+    const btnLista = document.getElementById('modo-lista');
+    const btnGrade = document.getElementById('modo-grade');
+
+    btnLista.addEventListener('click', () => {
+        wrapper.classList.remove('modo-grade');
+        wrapper.classList.add('modo-lista');
+    });
+
+    btnGrade.addEventListener('click', () => {
+        wrapper.classList.remove('modo-lista');
+        wrapper.classList.add('modo-grade');
+    });
+</script>
+
+
+
+<section class="rodape">
+    <footer>
+        <div id="texto-rodape">
+            <p>©2021-2025 Nerdola Simracing Association</p>
+        </div>
+    </footer>
+</section>
+</body>
+</html>

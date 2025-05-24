@@ -8,7 +8,7 @@ body, html {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Mantém o fundo fixo durante a rolagem */
+    background-attachment: fixed;
     color: #ffffff;
 }
 
@@ -19,7 +19,8 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -45,37 +46,81 @@ header {
     max-height: 35px;
     height: 100%;
     margin-right: 300px;
-    max-width: auto;
+    max-width: 100%;
 }
 
 .logo-new-right-img {
     max-height: 55px;
     margin-right: 292px;
     height: 100%;
-    max-width: auto;
+    max-width: 100%;
     cursor: pointer;
 }
 
 nav {
     display: flex;
     justify-content: flex-start;
-    
+    position: relative;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    margin-left: 257px;
+  display: flex;
+  list-style: none;
+  margin-left: 257px;
+  position: relative; /* Adicionado */
 }
 
 nav ul li {
-    margin-right: 45px;
-    font-size: 1.2em;
+  margin-right: 45px;
+  font-size: 1.2em;
+  position: relative; /* Adicionado para o submenu ser posicionado relativamente a este item */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Submenu oculto inicialmente */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 180px;
+  z-index: 9999;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.submenu li a {
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+
+.submenu li a:hover {
+  background-color: #333;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .submenu {
+  display: flex;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    z-index: 100;
 }
 
 .background-section {
