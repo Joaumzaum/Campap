@@ -23,7 +23,7 @@ const DADOS_CAMPEONATO = {
         },
         maisPoles: {
             nome: "Bruno Scremin",
-            poles: 10
+            poles: 120
         }
     },
 
