@@ -22,7 +22,7 @@ const DADOS_CAMPEONATO = {
             vitorias: 77.5
         },
         maisPoles: {
-            nome: "Bruno Scremin",
+            nome: "Bruno S. / João M.",
             poles: 120
         }
     },
