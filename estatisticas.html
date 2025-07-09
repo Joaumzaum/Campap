@@ -3,145 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campap: Racing Seasons</title>
+    <title>Campap: Racing Seasons - Estatísticas</title>
     <link rel="stylesheet" href="estatisticasstyles.css">
 </head>
 <body>
     <div class="top-bar">
         <div class="logo-left">
-            <a href="index.html"><img src="logo-left.png" alt="Campap" class="logo-left-img"></a> <!-- Link para a página principal -->
+            <a href="index.html"><img src="logo-left.png" alt="Campap" class="logo-left-img"></a>
         </div>
         <div class="logo-right">
-            <img src="logo-right.png" alt="Nerdola" class="logo-right-img"> <!-- Sem link, apenas imagem -->
+            <img src="logo-right.png" alt="Nerdola" class="logo-right-img">
         </div>
     </div>
 
     <header>
-    <nav>
-      <div class="menu-toggle">☰</div>
-      <ul>
-        <li><a href="/noticias/noticias.html">Notícias</a></li>
-
-        <li class="dropdown">
-          <a href="eventos.html">Eventos</a>
-          <div class="submenu">
-            <a href="#">2025</a>
-            <a href="#">2024</a>
-            <a href="#">2023</a>
-            <a href="#">2022</a>
-            <a href="#">2021</a>
-          </div>
-        </li>
-
-        <li><a href="historia.html">História</a></li>
-        <li><a href="hof.html">Hall of Fame</a></li>
-        <li><a href="estatisticas.html">Estatísticas</a></li>
-        <li><a href="ranking.html">Sanabria Ranking</a></li>
-      </ul>
-    </nav>
-    <div class="logo-new-right">
-      <a href="campaquita.html"><img src="logo-new-right.png" alt="Campaquita" class="logo-new-right-img"></a>
-    </div>
-  </header>
-        
-    <section class="background-section">
-        <div class="texticulo">
-            <h2>Tabela de Estatísticas</h2>
-            <p>Dados de Fevereiro de 2025</p> 
-            <p>(Clique para ordenar)</p>
+        <nav>
+            <div class="menu-toggle">☰</div>
+            <ul>
+                <li><a href="/noticias/noticias.html">Notícias</a></li>
+                <li class="dropdown">
+                    <a href="eventos.html">Eventos</a>
+                    <div class="submenu">
+                        <a href="#">2025</a>
+                        <a href="#">2024</a>
+                        <a href="#">2023</a>
+                        <a href="#">2022</a>
+                        <a href="#">2021</a>
+                    </div>
+                </li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="hof.html">Hall of Fame</a></li>
+                <li><a href="estatisticas.html">Estatísticas</a></li>
+                <li><a href="ranking.html">Sanabria Ranking</a></li>
+            </ul>
+        </nav>
+        <div class="logo-new-right">
+            <a href="campaquita.html"><img src="logo-new-right.png" alt="Campaquita" class="logo-new-right-img"></a>
         </div>
-        <table class="sortable">
-        <thead>
-            <tr>
-                <th>Piloto</th>
-                <th>Vitórias</th>
-                <th>Poles</th>
-                <th>Campeonatos Vencidos</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-                <td>X</td>
-            </tr>
-            <tr>
-                <td>João Marcos Angeli</td>
-                <td>20</td>
-                <td>15</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>Bruno Scremin</td>
-                <td>12</td>
-                <td>16</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>Henrique Gomes</td>
-                <td>6</td>
-                <td>9</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Luiz Henrique Conte</td>
-                <td>3</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Lucas Santana</td>
-                <td>2</td>
-                <td>2</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Bernardo Maui</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Gabriel Alcântara</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Miguel Dias</td>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Rodrigo Ark</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Douglas Tomacheski</td>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Vitor Moskito</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Brendo Duarte</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-            </tr>
-        </tbody>
-    </table>
-    <script src="scripts.js"></script>
-    </section>
+    </header>
+        
+    <main class="main-content">
+        <!-- Seção Hero -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Estatísticas CAMPAP</h1>
+                <p>Apanhado de dados do CAMPAP</p>
+                <p class="update-info" id="update-info">Carregando...</p>
+            </div>
+        </section>
+
+        <!-- Navegação das Seções -->
+        <nav class="stats-nav">
+            <button class="nav-btn active" data-section="geral">Geral</button>
+            <button class="nav-btn" data-section="temporada-atual">Temporada Atual</button>
+            <button class="nav-btn" data-section="historico">Histórico</button>
+            <button class="nav-btn" data-section="equipes">Equipes</button>
+            <button class="nav-btn" data-section="premiacao">Premiações</button>
+        </nav>
+
+        <!-- Seção Estatísticas Gerais -->
+        <section id="geral" class="stats-section active">
+            <div class="section-header">
+                <h2>Estatísticas Gerais</h2>
+                <p>Números históricos do CAMPAP por temporada</p>
+            </div>
+            
+            <div class="stats-grid" id="stats-grid">
+                <!-- Será preenchido dinamicamente -->
+            </div>
+
+            <div class="table-container">
+                <h3>Ranking Histórico de Pilotos</h3>
+                <table class="stats-table sortable" id="historical-ranking">
+                    <thead>
+                        <tr>
+                            <th>Posição</th>
+                            <th>Piloto</th>
+                            <th>Pontos</th>
+                            <th>Títulos</th>
+                            <th>Vitórias</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historical-ranking-body">
+                        <!-- Será preenchido dinamicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Seção Temporada Atual -->
+        <section id="temporada-atual" class="stats-section">
+            <div class="section-header">
+                <h2 id="current-season-title">Carregando...</h2>
+                <p id="current-season-subtitle">Carregando...</p>
+            </div>
+            
+            <div class="current-season-info" id="current-season-info">
+                <!-- Será preenchido dinamicamente -->
+            </div>
+
+            <div class="table-container">
+                <h3 id="current-season-table-title">Carregando...</h3>
+                <table class="stats-table" id="current-season-table">
+                    <thead id="current-season-table-head">
+                        <!-- Será preenchido dinamicamente -->
+                    </thead>
+                    <tbody id="current-season-table-body">
+                        <!-- Será preenchido dinamicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Seção Histórico -->
+        <section id="historico" class="stats-section">
+            <div class="section-header">
+                <h2>Histórico das Temporadas</h2>
+                <p>Campeões e carros por temporada</p>
+            </div>
+            
+            <div class="timeline" id="timeline">
+                <!-- Será preenchido dinamicamente -->
+            </div>
+        </section>
+
+        <!-- Seção Equipes -->
+        <section id="equipes" class="stats-section">
+            <div class="section-header">
+                <h2 id="teams-title">Carregando...</h2>
+                <p>Organizações e pilotos</p>
+            </div>
+            
+            <div class="teams-grid" id="teams-grid">
+                <!-- Será preenchido dinamicamente -->
+            </div>
+        </section>
+
+        <!-- Seção Premiações -->
+        <section id="premiacao" class="stats-section">
+            <div class="section-header">
+                <h2>CAMPAP Awards</h2>
+                <p id="awards-subtitle">Carregando...</p>
+            </div>
+            
+            <div class="awards-grid" id="awards-grid">
+                <!-- Será preenchido dinamicamente -->
+            </div>
+        </section>
+    </main>
     
     <section class="rodape">
         <footer>
@@ -151,16 +160,7 @@
         </footer>
     </section>
 
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const menuToggle = document.querySelector('.menu-toggle');
-      const navUl = document.querySelector('nav ul');
-      if (menuToggle) {
-        menuToggle.addEventListener('click', function() {
-          navUl.classList.toggle('show');
-        });
-      }
-    });
-  </script>
+    <script src="data.js"></script>
+    <script src="estatisticas.js"></script>
 </body>
 </html>
