@@ -140,8 +140,8 @@ const DADOS_CAMPEONATO = {
             { nome: "MELHOR BATIDA", icone: "🌟", vencedor: "MARRETA X SANABRIA" },
             { nome: "MOMENTO CAMPAP", icone: "🚗", vencedor: "VINI DEPRESSÃO" },
             { nome: "PIOR VETERANO", icone: "🥇", vencedor: "HEITOR DUTRA" },
-            { nome: "PILOTO REVELAÇÃO", icone: "🏁", vencedor: "TONI" },
-            { nome: "MELHOR ROOKIE", icone: "👥", vencedor: "FEH SILVA" }
+            { nome: "PILOTO REVELAÇÃO", icone: "🏁", vencedor: "ANTONIO G." },
+            { nome: "MELHOR ROOKIE", icone: "👥", vencedor: "FELIPE SILVA" }
         ]
     }
 };
