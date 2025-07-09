@@ -410,14 +410,31 @@ class CampapStats {
                         ${equipe.pilotos.map(piloto => `
                             <div class="driver">${piloto}</div>
                         `).join('')}
+                        
+                    </div>
+                </div>
+            `).join('');
+        }
+    }
+
+    /* EQUIPES COM FUNCIONALIDADE DE PILOTOS EXTRAS
+
+    if (teamsGrid) {
+            teamsGrid.innerHTML = this.dados.equipes.map(equipe => `
+                <div class="team-card">
+                    <h3>${equipe.nome}</h3>
+                    <div class="team-drivers">
+                        ${equipe.pilotos.map(piloto => `
+                            <div class="driver">${piloto}</div>
+                        `).join('')}
                         ${equipe.reservas.map(reserva => `
                             <div class="driver reserve">${reserva} (Reserva)</div>
                         `).join('')}
                     </div>
                 </div>
             `).join('');
-        }
-    }
+        } 
+    */
 
     loadPremiacaoSection() {
         const awardsSubtitle = document.getElementById('awards-subtitle');
